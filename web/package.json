@@ -1,0 +1,22 @@
+{
+  "name": "with-tailwindcss",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && next export -o gh-pages && git checkout -- gh-pages/.nojekyll && git add gh-pages && git commit -m \"chore: regen site\" && git push origin master"
+  },
+  "dependencies": {
+    "@tailwindcss/forms": "^0.2.1",
+    "autoprefixer": "^10.0.4",
+    "bitcore-mnemonic": "^8.24.2",
+    "classnames": "^2.2.6",
+    "next": "latest",
+    "postcss": "^8.1.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
